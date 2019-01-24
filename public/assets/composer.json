@@ -1,0 +1,12 @@
+{
+    "require": {
+        "twbs/bootstrap": "^4.2",
+        "components/jquery": "^3.3"
+    },
+    
+    "extra": {
+        "installer-paths": {
+            "vendor/{$name}": ["vendor/package"]
+        }
+    }	
+}
