@@ -21,6 +21,7 @@
 
 !/public/assets
 !/public/assets/*
+
 /public/assets/Stylesheets/css
 /public/assets/Javascript/dist
 
