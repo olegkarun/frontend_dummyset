@@ -1,0 +1,64 @@
+# This uses a whitelist strategy
+# At first nothing is included in git at all
+
+/*
+# with the exclamation mark (!) there are several
+# files and folders included back again
+!/docker/
+
+!/.gitignore
+!/.gitmodules
+
+!/composer.lock
+!/composer.json
+
+!/public/robots.txt
+!/public/favicon.ico
+!/Gruntfile.js
+!/grunt/
+!/grunt/*
+!/package.json
+
+!/public/assets
+!/public/assets/*
+/public/assets/Stylesheets/css
+/public/assets/Javascript/dist
+
+#add back root folder
+!/public/
+
+/public/*
+!/public/fileadmin
+
+# skip all but template dummy leave
+/public/fileadmin/*
+!/public/fileadmin/content
+!/public/fileadmin/content/*
+!/public/fileadmin/brand
+
+# add here the files/folders from fileadmin folder
+# to be included in git
+
+!/public/typo3conf
+/public/typo3conf/*
+
+#Exlude AdditionalConfiguration form git. Will be used for TYPO3 instance 
+
+!/public/typo3conf/LocalConfiguration.php
+!/public/typo3conf/sites
+!/public/typo3conf/sites/*
+
+!/public/typo3conf/ext
+/public/typo3conf/ext/*
+
+
+# add here additional extensions to be included in git
+# !/public//typo3conf/ext/<includeMe>
+
+!/public/typo3conf/ext/tb_theme
+!/public/typo3conf/ext/tb_theme/*
+
+/public/typo3conf/ext/tb_theme/Resources/Public/Stylesheets/css/
+/public/typo3conf/ext/tb_theme/Resources/Public/Stylesheets/css/*
+/public/typo3conf/ext/tb_theme/Resources/Public/JavaScript/dist/
+/public/typo3conf/ext/tb_theme/Resources/Public/JavaScript/dist/*

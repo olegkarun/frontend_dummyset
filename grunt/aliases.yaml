@@ -1,0 +1,13 @@
+default:
+ description: 'default - Develop task list'
+ tasks:
+  - dev
+dev:
+ description: 'Develop task list'
+ tasks:
+  - 'concurrent:devbase'
+  - watch
+prod:
+ description: 'Stage task lists'
+ tasks:
+  - 'concurrent:prodbase'

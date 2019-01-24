@@ -1,0 +1,35 @@
+{
+  "name": "team-beverage-website",
+  "version": "0.0.1",
+  "description": "TYPO3 frontend build with Grunt/SASS",
+  "devDependencies": {
+    "compass-importer": "^0.4.1",
+    "grunt": "^1.0.3",
+    "grunt-cli": "^1.2.0",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-uglify": "2.3.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.0.2",
+    "load-grunt-config": "^1.0.1"
+  },
+  "dependencies": {
+    "jshint-stylish": "^2.2.1",
+    "node-sass": "^4.11.0",
+    "time-grunt": "^2.0.0"
+  },
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://okarunahoii@bitbucket.org/ahoii-team/team-beverage-website.git"
+  },
+  "author": "Oleg Karun",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ahoii-team/team-beverage-website#readme",
+  "scripts": {
+    "grunt-prod": "grunt prod",
+    "grunt": "grunt",
+    "grunt-uglify": "grunt uglify:prod",
+    "grunt-sass": "grunt sass:prod"
+  }
+}
