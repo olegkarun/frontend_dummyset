@@ -8,6 +8,7 @@
 
 !/.gitignore
 !/.gitmodules
+!/README.md
 
 !/composer.lock
 !/composer.json
@@ -56,10 +57,10 @@
 # add here additional extensions to be included in git
 # !/public//typo3conf/ext/<includeMe>
 
-!/public/typo3conf/ext/tb_theme
-!/public/typo3conf/ext/tb_theme/*
+!/public/typo3conf/ext/tbw_theme
+!/public/typo3conf/ext/tbw_theme/*
 
-/public/typo3conf/ext/tb_theme/Resources/Public/Stylesheets/css/
-/public/typo3conf/ext/tb_theme/Resources/Public/Stylesheets/css/*
-/public/typo3conf/ext/tb_theme/Resources/Public/JavaScript/dist/
-/public/typo3conf/ext/tb_theme/Resources/Public/JavaScript/dist/*
+/public/typo3conf/ext/tbw_theme/Resources/Public/Stylesheets/css/
+/public/typo3conf/ext/tbw_theme/Resources/Public/Stylesheets/css/*
+/public/typo3conf/ext/tbw_theme/Resources/Public/JavaScript/dist/
+/public/typo3conf/ext/tbw_theme/Resources/Public/JavaScript/dist/*
