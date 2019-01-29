@@ -1,0 +1,47 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://composer.typo3.org/"
+        }
+
+    ],
+    "name": "typo3/tbw-website",
+    "description": "Team-beverage website",
+    "license": "GPL-2.0-or-later",
+    "config": {
+        "platform": {
+            "php": "7.2"
+        }
+    },
+    "require": {
+        "helhum/typo3-console": "^5.6",
+        "typo3/cms-base-distribution": "^9.5.0",
+        "fluidtypo3/fluidpages": "^4.3",
+        "fluidtypo3/vhs": "dev-development",
+        "lochmueller/sourceopt": "dev-master",
+        "pagemachine/hairu": "dev-typo3v9"
+    },
+
+    "require-dev": {
+        "jigal/t3adminer": "9.2.1",
+        "friendsoftypo3/extension-builder": "9.10.1"
+    }, 
+    "autoload": {
+        "psr-4": {
+            "IKK\\IkkContacts\\": "public/typo3conf/ext/tbw_theme/Classes"
+        }
+    },    
+
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": "public"
+        },
+        "helhum/typo3-console": {
+            "install-binary": false,
+            "install-extension-dummy": false
+        } 
+    }    
+
+}

@@ -1,0 +1,24 @@
+rootPageId: 1
+base: team-beverage.de
+baseVariants:
+  -
+    base: 'http://team-beverage.typozone.pro/'
+    condition: 'applicationContext == "Development"'
+  -
+    base: 'http://tbw.staging-ahoii.net/'
+    condition: 'applicationContext == "Testing"'
+languages:
+  -
+    title: German
+    enabled: true
+    languageId: '0'
+    base: /
+    typo3Language: de
+    locale: de_DE
+    iso-639-1: de
+    navigationTitle: German
+    hreflang: de-DE
+    direction: ''
+    flag: de
+errorHandling: {  }
+routes: {  }

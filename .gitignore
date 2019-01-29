@@ -18,20 +18,26 @@
 !/Gruntfile.js
 !/grunt/
 !/grunt/*
+!/config/
+!/config/*
 !/package.json
+
+
+!/public
+#add back root folder
+/public/*
+
+
 
 !/public/assets
 !/public/assets/*
+!/public/assets/**/*
 
 /public/assets/Stylesheets/css
 /public/assets/Javascript/dist
 
-#add back root folder
-!/public/
 
-/public/*
 !/public/fileadmin
-
 # skip all but template dummy leave
 /public/fileadmin/*
 !/public/fileadmin/content
