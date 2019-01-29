@@ -116,29 +116,7 @@ $arrow-spacer: 220px;
             display: block;
             z-index:5;
 
-            &:before{
-                content:'';
-                display: block;
-                width: $compass-blur-size;
-                height:$compass-blur-size;
-                position: absolute;
 
-                //todo migrate to compass css3
-                background: rgba(82,192,220,1);
-                background: -moz-radial-gradient(center, ellipse cover, rgba(82,192,220,1) 0%, rgba(82,192,220,1) 25%, rgba(89,195,221,1) 26%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
-                background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(82,192,220,1)), color-stop(25%, rgba(82,192,220,1)), color-stop(26%, rgba(89,195,221,1)), color-stop(50%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));
-                background: -webkit-radial-gradient(center, ellipse cover, rgba(82,192,220,1) 0%, rgba(82,192,220,1) 25%, rgba(89,195,221,1) 26%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
-                background: -o-radial-gradient(center, ellipse cover, rgba(82,192,220,1) 0%, rgba(82,192,220,1) 25%, rgba(89,195,221,1) 26%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
-                background: -ms-radial-gradient(center, ellipse cover, rgba(82,192,220,1) 0%, rgba(82,192,220,1) 25%, rgba(89,195,221,1) 26%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
-                background: radial-gradient(ellipse at center, rgba(82,192,220,1) 0%, rgba(82,192,220,1) 25%, rgba(89,195,221,1) 26%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52c0dc', endColorstr='#ffffff', GradientType=1 );
-
-                margin-left: $compass-blur-size/-2;
-                margin-top: $compass-blur-size/-2;
-                top:50%;
-                left:50%;
-                opacity: 0.7;
-            }
         }
 
 
@@ -151,6 +129,30 @@ $arrow-spacer: 220px;
             height: 100%;
         }
         .blurs{
+            &:before{
+                content:'';
+                display: block;
+                width: $compass-blur-size;
+                height:$compass-blur-size;
+                position: absolute;
+
+                //todo migrate to compass css3
+                background: rgba(2, 31, 63,1);
+                background: -moz-radial-gradient(center, ellipse cover, rgba(2, 31, 63,1) 0%, rgba(2, 31, 63,1) 25%, rgba(3, 32, 63,1) 26%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+                background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(2, 31, 63,1)), color-stop(25%, rgba(2, 31, 63,1)), color-stop(26%, rgba(3, 32, 63,1)), color-stop(50%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));
+                background: -webkit-radial-gradient(center, ellipse cover, rgba(2, 31, 63,1) 0%, rgba(2, 31, 63,1) 25%, rgba(3, 32, 63,1) 26%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+                background: -o-radial-gradient(center, ellipse cover, rgba(2, 31, 63,1) 0%, rgba(2, 31, 63,1) 25%, rgba(3, 32, 63,1) 26%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+                background: -ms-radial-gradient(center, ellipse cover, rgba(2, 31, 63,1) 0%, rgba(2, 31, 63,1) 25%, rgba(3, 32, 63,1) 26%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+                background: radial-gradient(ellipse at center, rgba(2, 31, 63,1) 0%, rgba(2, 31, 63,1) 25%, rgba(3, 32, 63,1) 26%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52c0dc', endColorstr='#ffffff', GradientType=1 );
+
+                margin-left: $compass-blur-size/-2;
+                margin-top: $compass-blur-size/-2;
+                top:50%;
+                left:50%;
+                opacity: 0.5;
+            }
+            
             z-index: 1;
             .blur{
                 overflow:hidden;
@@ -205,6 +207,7 @@ $arrow-spacer: 220px;
                 margin:130px;
                 width: 28px;
                 height: 28px;
+                @include transition(all 0.35s ease 0.25s);
 
             }
             transform-origin: center;
@@ -272,6 +275,7 @@ $arrow-spacer: 220px;
             margin-bottom: $compass-width /-2;
             animation: rot_1_in 0.35s ease-out;
             transform: translate(0px) rotate(-30deg);
+            opacity:0;
         }
         .word{
             margin-bottom: $compass-height /-2;
@@ -282,6 +286,7 @@ $arrow-spacer: 220px;
             .arrow{
                 animation: rot_1_out 0.35s ease-in;
                 transform: translate(40px) rotate(0deg);
+                opacity:1;
             }
             .word{
 
@@ -311,6 +316,7 @@ $arrow-spacer: 220px;
             animation: rot_2_in 0.35s ease-out;
             transform: translate(0px) rotate(60deg);
             margin-bottom: $compass-width /-2;
+            opacity:0;
         }
         .word{
             margin-bottom: $compass-height /-2;
@@ -320,6 +326,7 @@ $arrow-spacer: 220px;
             .arrow{
                 animation: rot_2_out 0.35s ease-in;
                 transform: translate(-20px) rotate(90deg);
+                opacity:1;
             }
             .word{
                 left:-16px;
@@ -347,6 +354,7 @@ $arrow-spacer: 220px;
             margin-top: $compass-width /-2;
             animation: rot_3_in 0.35s ease-out;
             transform: translate(0px) rotate(240deg);
+            opacity:0;
         }
         .word{
             margin-top: $compass-height /-2;
@@ -355,6 +363,7 @@ $arrow-spacer: 220px;
             .arrow{
                 animation: rot_3_out 0.35s ease-in;
                 transform: translate(15px) rotate(273deg);
+                opacity:1;
             }
             .word{
                 right:-16px;
@@ -383,6 +392,7 @@ $arrow-spacer: 220px;
             margin-top: $compass-width /-2;
             animation: rot_4_in 0.35s ease-out;
             transform: translate(0px) rotate(150deg);
+            opacity:0;
         }
         .word{
             margin-top: $compass-height /-2;
@@ -391,6 +401,7 @@ $arrow-spacer: 220px;
             .arrow{
                 animation: rot_4_out 0.35s ease-in;
                 transform: translate(-52px) rotate(171deg);
+                opacity:1;
             }
             .word{
                 left:-16px;
@@ -411,10 +422,12 @@ $arrow-spacer: 220px;
 @keyframes rot_1_in {
     from {
         transform: translate(40px) rotate(0deg);
+        opacity:1;
         
     }
     to {
         transform: translate(0px) rotate(-30deg);
+        opacity:0;
     }
 }
 
@@ -422,10 +435,11 @@ $arrow-spacer: 220px;
 @keyframes rot_1_out {
     0% {
         transform: translate(0px)rotate(-30deg);
-        
+        opacity:0;
     }
     100% {
         transform: translate(40px) rotate(0deg);
+        opacity:1;
     }
 }
 
