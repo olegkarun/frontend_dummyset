@@ -11,9 +11,11 @@
     "grunt-contrib-uglify": "2.3.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-sass": "^3.0.2",
+    "grunt-svgstore": "^2.0.0",
     "load-grunt-config": "^1.0.1"
   },
   "dependencies": {
+    "grunt-svginjector": "^0.2.0",
     "jshint-stylish": "^2.2.1",
     "node-sass": "^4.11.0",
     "time-grunt": "^2.0.0"

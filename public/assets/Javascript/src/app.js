@@ -26,15 +26,21 @@ const tbUI = (function ($) {
         $controls.hover(function () {
             var target = $(this).data('blur'),
                     $blurs = $('.blurs .blur'),
-                    $links = $('.controls .link');
+                    $links = $('.controls .link'),
+                    $navOverlay = $('.interactiv-nav .nav-item .overlay');      
+            
+            $navOverlay.removeClass('hover');
             $blurs.removeClass('hover');
             $links.removeClass('hover');
+            
             $(this).addClass('hover');
             $('.blurs').find(target).addClass('hover');
+            $('.interactiv-nav .nav-item').find(target).addClass('hover');
         });
 
         $compass.mouseleave(function () {
             $('.blurs .blur').removeClass('hover');
+            $('.interactiv-nav .nav-item .overlay').removeClass('hover');
         });
 
 
