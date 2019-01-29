@@ -13,12 +13,10 @@
 !/composer.lock
 !/composer.json
 
-!/public/robots.txt
-!/public/favicon.ico
 !/Gruntfile.js
-!/grunt/
+!/grunt
 !/grunt/*
-!/config/
+!/config
 !/config/*
 !/package.json
 
@@ -27,11 +25,15 @@
 #add back root folder
 /public/*
 
+!/public/robots.txt
+!/public/favicon.ico
 
+
+# temp frontend folder
 
 !/public/assets
 !/public/assets/*
-!/public/assets/**/*
+!/public/assets/*
 
 /public/assets/Stylesheets/css
 /public/assets/Javascript/dist
@@ -51,14 +53,10 @@
 /public/typo3conf/*
 
 #Exlude AdditionalConfiguration form git. Will be used for TYPO3 instance 
-
 !/public/typo3conf/LocalConfiguration.php
-!/public/typo3conf/sites
-!/public/typo3conf/sites/*
 
 !/public/typo3conf/ext
 /public/typo3conf/ext/*
-
 
 # add here additional extensions to be included in git
 # !/public//typo3conf/ext/<includeMe>
