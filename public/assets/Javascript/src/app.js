@@ -1,7 +1,13 @@
 'use strict';
 const tbUI = (function ($) {
 
-
+    function preLaoder() {
+         $(window).on('load', function () {
+            setTimeout(function () {
+                $('body').addClass('loaded');
+            }, 600);
+        });
+    }
     function testFunc() {
 
         var testVar = 'Hi';
@@ -16,7 +22,7 @@ const tbUI = (function ($) {
             transition: false, // Set a transition on enter/exit.
             disableAxis: null, // What axis should be disabled. Can be X or Y.
             reset: false, // allow dont jump when hover lost
-            
+
             glare: false, // Enables glare effect
             maxGlare: 0     // From 0 - 1. 
         });
@@ -28,12 +34,12 @@ const tbUI = (function ($) {
             var target = $(this).data('blur'),
                     $blurs = $('.blurs .blur'),
                     $links = $('.controls .link'),
-                    $navOverlay = $('.interactiv-nav .nav-item .overlay');      
-            
+                    $navOverlay = $('.interactiv-nav .nav-item .overlay');
+
             $navOverlay.removeClass('hover');
             $blurs.removeClass('hover');
             $links.removeClass('hover');
-            
+
             $(this).addClass('hover');
             $('.blurs').find(target).addClass('hover');
             $('.interactiv-nav .nav-item').find(target).addClass('hover');
@@ -51,6 +57,7 @@ const tbUI = (function ($) {
 
     return {
         init: function () {
+            preLaoder();
             testFunc();
         }
     };
