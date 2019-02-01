@@ -1,0 +1,7 @@
+#sudo a2enmod include
+
+Options +Includes
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml
+AddHandler server-parsed .html
+

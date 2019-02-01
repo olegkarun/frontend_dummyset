@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="Stylesheets/css/style.css">
+        <meta name="description" content="">
+        <title>Team Beverage | Startsite</title>
+    </head>
+    <body>
+
+        <div class="website-wrap">
+            <!--#include virtual="_includes/header.html" -->
+            <main role="main">
+
+            </main>
+            <div class="pull"></div>
+        </div>
+        
+        <!--#include virtual="_includes/footer.html" -->
+
+        <!--#include virtual="_includes/js.html" -->
+    </body>
+</html>

@@ -1,0 +1,31 @@
+html {
+    height: 100%;
+    display: block;
+    position: relative;
+    min-height: 100%;
+}
+body {
+    height: 100%;
+    position: relative;
+    min-width: 375px;
+}
+
+//min-width: $screen-xs-max
+.website-wrap{
+    @include media-breakpoint-down(md) { 
+        overflow-x: hidden;
+    }
+} 
+
+
+@include media-breakpoint-up(lg) { 
+    .website-wrap{
+        display: block;
+        height: auto;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+   
+}

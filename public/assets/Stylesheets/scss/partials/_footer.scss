@@ -1,0 +1,19 @@
+footer.stack{
+    background: red;
+}
+
+@include media-breakpoint-up(md) {
+    .pull {
+        height:  $footer-height;
+        display: block;
+    }
+    footer.stack{
+        height: $footer-height;
+        position: relative;
+        z-index: 10;
+        margin-top: ($footer-height+0.025) * -1;  // + 1 fix zoom space
+        padding-top: 0;
+
+    }
+}
+
